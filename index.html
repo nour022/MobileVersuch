@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>information-technology-institute</title>
+  </head>
+  <body>
+    <header>
+      <!-- ------ Erste Teil Menu ------ -->
+      <div class="menu_i">
+        <div class="abouticons">...</div>
+        <div class="sing_in">
+          <a href="#"
+            ><span class="material-symbols-outlined"> lock </span> Staff only</a
+          >
+          <a href="#"
+            ><span class="material-symbols-outlined"> lock </span>Sign in</a
+          >
+        </div>
+      </div>
+      <nav>
+        <div class="logo-box">
+          <img src="assets/img/logo.png" alt="logo" width="70" height="70" />
+          <p>
+            information technology <br />
+            institute
+          </p>
+        </div>
+        <label for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle" />
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a href="#" class="taster"
+              >Programs
+              <span class="material-symbols-outlined"> expand_more </span></a
+            >
+            <ul class="dropdown">
+              <li>
+                <a href="#"
+                  ><img src="assets/img/js.png" alt="js" />
+                  <p>JavaScript</p></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="assets/img/html.png" alt="html" />
+                  <p>HTML5</p></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="assets/img/css.png" alt="css" />
+                  <p>CSS</p></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="assets/img/php.png" alt="php" />
+                  <p>PHP</p></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="assets/img/sql.png" alt="" />
+                  <p>SQL</p></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="assets/img/c.png" alt="" />
+                  <p>C#</p></a
+                >
+              </li>
+            </ul>
+
+            <script>
+              var taster = document.getElementsByClassName("taster")[0];
+              var dropdowns = document.getElementsByClassName("dropdown");
+
+              taster.addEventListener("click", function () {
+                for (var i = 0; i < dropdowns.length; i++) {
+                  if (dropdowns[i].style.display === "none") {
+                    dropdowns[i].style.display = "flex";
+                  } else {
+                    dropdowns[i].style.display = "none";
+                  }
+                }
+              });
+            </script>
+          </li>
+          <li><a href="news.html">IT|News</a></li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>
