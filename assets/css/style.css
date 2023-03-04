@@ -120,6 +120,9 @@ li > .dropdown > li > a > p {
 li > .dropdown {
   display: none;
 }
+
+
+
 /*------------ footer --------------*/
 footer {
   grid-area: footer;
